@@ -3,6 +3,7 @@ package observer;
 
 import java.util.*;
 import java.util.ArrayList;
+///ddd
 
 
 public class ConcreteMember implements  Member {
