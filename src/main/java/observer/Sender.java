@@ -5,8 +5,7 @@ public interface Sender {
     void register(Member obj);
     void unregister(Member obj);
     //Inserts the string into this character sequence.
-    public void notifyMembers();
-    // notifies ll the members on undoableStringBuilderState.
+
     void insert(int offset, String obj);
     // Appends the specified string to this character sequence.
     void append(String obj);

@@ -178,7 +178,12 @@ public class UndoableStringBuilder {
      * @return A string representation of the object.
      */
     public String toString(){
-        return stack.peek();
+        if(stack.empty()){
+            return null;
+        }
+        else{
+            return stack.peek();
+        }
     }
 
 }

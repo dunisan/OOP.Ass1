@@ -22,10 +22,11 @@ public class GroupAdmin implements Sender {
     @Override
     public void unregister(Member obj) {
         this.members.remove(obj);
+        obj = null;
     }
 
-    @Override
-    public void notifyMembers() {
+
+    private void notifyMembers() {
         for(Member o : this.members){
             o.update(status);
         }
