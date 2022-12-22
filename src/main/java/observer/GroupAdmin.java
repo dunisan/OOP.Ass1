@@ -7,8 +7,8 @@ public class GroupAdmin implements Sender {
     private UndoableStringBuilder status;
     private List<Member> members;
 
-    public GroupAdmin(UndoableStringBuilder status) {
-        this.status = status;
+    public GroupAdmin() {
+        this.status = new UndoableStringBuilder();
         this.members = new LinkedList<>();
     }
 
@@ -16,6 +16,7 @@ public class GroupAdmin implements Sender {
     @Override
     public void register(Member obj) {
         this.members.add(obj);
+        obj.update(status);
     }
 
     @Override

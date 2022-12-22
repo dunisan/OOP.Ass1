@@ -8,14 +8,21 @@ import java.util.ArrayList;
 public class ConcreteMember implements  Member {
 
     private GroupAdmin admin;
+    private UndoableStringBuilder concreteMember;
 
     public ConcreteMember(GroupAdmin admin) {
+
         this.admin = admin;
         admin.register(this);
     }
 
     @Override
     public void update(UndoableStringBuilder usb) {
-        System.out.println(usb);
+        this.concreteMember = usb;
+    }
+
+    @Override
+    public String toString() {
+        return this.concreteMember.toString();
     }
 }

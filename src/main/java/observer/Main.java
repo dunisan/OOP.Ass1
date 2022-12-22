@@ -5,13 +5,13 @@ public class Main {
 
         String error = null;
         UndoableStringBuilder str = new UndoableStringBuilder();
-        GroupAdmin usb = new GroupAdmin(str);
+        GroupAdmin usb = new GroupAdmin();
         ConcreteMember member1 = new ConcreteMember(usb);
         ConcreteMember member2 = new ConcreteMember(usb);
         ConcreteMember member3 = new ConcreteMember(usb);
 
         usb.append("to be or not to be") ;
-      //  System.out.println(usb) ;
+        System.out.println(member1) ;
         usb.replace(3, 5, "eat") ;
       //  System.out.println(usb) ;
         usb.delete(3,6) ;
