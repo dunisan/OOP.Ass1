@@ -1,5 +1,15 @@
 package observer;
 
+/**
+ *
+ * The ConcreteMember class is for updating the members of the undoableStringBuilder status,
+ * the ConcreteMember class implements the Member,
+ * that is used for implementing the observer design pattern
+ *
+ * @author  Daniel Schneiderman && Tuvia Smadar
+ * @version 1.0
+ * @since   2022-28-12
+ */
 
 import java.util.*;
 import java.util.ArrayList;

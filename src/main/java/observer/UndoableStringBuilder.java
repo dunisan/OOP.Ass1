@@ -5,7 +5,7 @@
  * so that we can execute on it the undo() method
  * so that the last action we made on the string will go back.
  *
- * @author  Daniel Schneiderman && Tuvia Hagever
+ * @author  Daniel Schneiderman && Tuvia Smadar
  * @version 1.0
  * @since   2022-03-11
  */
@@ -15,7 +15,7 @@ import java.util.*;
 
 public class UndoableStringBuilder {
 
-    private static Stack<String> stack; // A stack that holds strings.
+    private Stack<String> stack; // A stack that holds strings.
     // that is how we will perform the undo method.
 
     /**

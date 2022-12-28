@@ -1,3 +1,12 @@
+/**
+ *
+ * The ConcreteMemberTest is for testing the ConcreteMember methods
+ *
+ * @author  Daniel Schneiderman && Tuvia Smadar
+ * @version 1.0
+ * @since   2022-28-12
+ */
+
 package observer;
 
 import org.junit.jupiter.api.Test;

@@ -1,3 +1,11 @@
+/**
+ *
+ * The GroupAdminTest is for testing the GroupAdmin methods
+ *
+ * @author  Daniel Schneiderman && Tuvia Smadar
+ * @version 1.0
+ * @since   2022-28-12
+ */
 package observer;
 
 import org.junit.jupiter.api.Test;
