@@ -1,37 +1,49 @@
 # OOP.Assignment2
+The project is part of  OOP course. 
 
 In this project we are implementing and practicing the ‘observer’ design pattern. 
-We have an admin that holds an UndoableStringBuilder, and we have the members that know what is the status of the string builder. 
+We will have an admin that holds an UndoableStringBuilder object, and we have the members that
+observe the status of the undoableStringBuilder object status. 
 The job of the admin is to notify the members in any change of the undoableStringBuilder. 
-
+****
+## Observer design pattern
+Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
+****
 ## Deeply into the project
 
-In the project we have 6 classes.
+### The classes
 
-**for the admin
-1. An interface class called **Sender** - contains all the method that are needed for managing the Undoable String Builder
-2. The **GroupAdmin** class that implements the Sender interface - the group admin holds the list of members and the status of the string builder
-3. The **GroupAdminTest** - contains tests for the Group Admin class. 
-**for the observers(members)
-4. An inteface class called **Member** - contain the update method. 
-5. The **concreteMember** class that implements the Member interface - that implements the update method for the members (and inheirtace a toString)
-6. The **concreteMemberTest** - contains tests for the concreteMember class. 
+In the project we have 5 classes.
 
-7. The **UndoableStringBuilder** class 
+* The undoableStringBuilder class: 
+*the class was implemented in the first OOP assignment,
+and adds to the stringBuilder original class - the undo operation
 
+For the admin side we have 2 classes: 
+* The **sender** interface class
+* The **GroupAdmin** class that implements the Sender interface
 
-To get to the UndoableStringBuilder, GroupAdmin, ConcreteMember and the interfaces we will get int /src/main/java/observer
-To get the tests we will get into src/test/java/observer 
+For the members side we have 2 classes: 
+* The **Member** inteface class
+* The **concreteMember** class that implements the Member interface
+
+Another important class is the **Tests** class, 
+that provides tests on the methods of the groupAdmin, and concrete member classes. 
+
+***
 
 ## How to Install and Run the Project
-The project is java wirtten.
-For running it you need to download the files, 
-and run it in a java IDE. 
+The project is java written.
+For running it you need to download the pom.Xml file and run it as a project. 
 
+
+****
 
 
 
 #### licenses 
-authors  Daniel Schneiderman && Tuvia Smadar
-version 1.0
-since   2022-28-12
+* authors:  Daniel Schneiderman && Tuvia Smadar
+* version 1.0
+* since   2022-28-12
+
+
