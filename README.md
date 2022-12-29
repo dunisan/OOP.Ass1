@@ -17,19 +17,19 @@ In the project we have 5 classes.
 
 * The undoableStringBuilder class: 
 *the class was implemented in the first OOP assignment,
-and adds to the stringBuilder original class - the undo operation
+and adds to the stringBuilder original class - the undo operation*
 
 For the admin side we have 2 classes: 
 * The **sender** interface class
-* The **GroupAdmin** class that implements the Sender interface
+* The **GroupAdmin** class that implements the Sender interface: 
+*The admin uses a linked list as a data structure for saving the members*
 
 For the members side we have 2 classes: 
 * The **Member** inteface class
 * The **concreteMember** class that implements the Member interface
 
 Another important class is the **Tests** class, 
-that provides tests on the methods of the groupAdmin, and concrete member classes. 
-
+that provides tests on the methods of the groupAdmin, and concrete member classes.
 ***
 
 ## How to Install and Run the Project
