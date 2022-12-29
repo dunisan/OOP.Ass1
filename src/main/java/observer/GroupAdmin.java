@@ -40,8 +40,12 @@ public class GroupAdmin implements Sender {
      */
     @Override
     public void register(Member obj) {
+        if(members.contains(obj)) {
+            System.out.println("The member is already registered");
+            return;
+        }
         this.members.add(obj); // add member to the lost
-        
+
     }
 
 
@@ -53,8 +57,13 @@ public class GroupAdmin implements Sender {
      * */
     @Override
     public void unregister(Member obj) {
-        this.members.remove(obj); // removoe member from the list
-        obj = null;
+        if(members.contains(obj)) {
+            this.members.remove(obj); // removoe member from the list
+            obj = null;
+        }
+        else{
+            System.out.println("Member is not registered");
+        }
     }
 
     /**
@@ -119,26 +128,12 @@ public class GroupAdmin implements Sender {
     }
 
     /**
-     *  replaces a the Undoable String Builder bytes from 'start' to 'end' with 'str'.
-     *  uses the replace method of the undoableString builder class
-     * @param start
-     * @param end
-     * @param str
+     * This function is used for testing the registered members in the members list
+     * @return the num of members
      */
-    @Override
-    public void replace(int start, int end, String str) {
-        this.status.replace(start,end, str);
-        notifyMembers();// notify all the members on the list
+    public int getNumOfRegisters(){
+        return members.size();
     }
 
 
-    /**
-     *  reverse the string in the Undoable String Builder.
-     *  uses the reverse method of the undoableString builder class
-     */
-    @Override
-    public void reverse() {
-        this.status.reverse();
-        notifyMembers();// notify all the members on the list
-    }
 }

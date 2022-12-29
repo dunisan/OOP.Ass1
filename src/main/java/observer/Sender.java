@@ -14,8 +14,4 @@ public interface Sender {
     // Erases the last change done to the document, reverting
     // it to an older state.
     void undo();
-
-    void replace(int start, int end, String str);
-
-    void reverse();
 }

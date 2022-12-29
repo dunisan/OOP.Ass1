@@ -21,10 +21,8 @@ public class ConcreteMember implements  Member {
     private GroupAdmin admin;
     private UndoableStringBuilder concreteMember;
 
-    public ConcreteMember(GroupAdmin admin) {
+    public ConcreteMember() {
 
-        this.admin = admin;
-        admin.register(this);
     }
 
     @Override
