@@ -41,7 +41,7 @@ public class GroupAdmin implements Sender {
     @Override
     public void register(Member obj) {
         this.members.add(obj); // add member to the lost
-        obj.update(status); // update the list
+        
     }
 
 
