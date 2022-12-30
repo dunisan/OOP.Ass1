@@ -1,4 +1,4 @@
-# OOP.Assignment2
+# OOP.Assignment1
 The project is part of  OOP course. 
 
 In this project we are implementing and practicing the ‘observer’ design pattern. 
