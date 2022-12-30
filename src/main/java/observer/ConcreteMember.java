@@ -21,8 +21,9 @@ public class ConcreteMember implements  Member {
     private GroupAdmin admin;
     private UndoableStringBuilder concreteMember;
 
-    public ConcreteMember() {
-
+    private String name;
+    public ConcreteMember(String name) {
+        this.name = name;
     }
 
     @Override

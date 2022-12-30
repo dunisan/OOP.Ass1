@@ -30,10 +30,15 @@ public class Tests {
     GroupAdmin admin = new GroupAdmin();
 
     //Create new members
-    ConcreteMember member1 = new ConcreteMember();
-    ConcreteMember member2 = new ConcreteMember();
-    ConcreteMember member3 = new ConcreteMember();
-    ConcreteMember member4 = new ConcreteMember();
+
+    String s1 = "Alice";
+    String s2 = "Bob";
+    String s3 = "Dani";
+    String s4 = "Tuvi";
+    ConcreteMember member1 = new ConcreteMember(s1);
+    ConcreteMember member2 = new ConcreteMember(s2);
+    ConcreteMember member3 = new ConcreteMember(s3);
+    ConcreteMember member4 = new ConcreteMember(s4);
 
 
     @Test
